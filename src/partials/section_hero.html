@@ -1,0 +1,83 @@
+<!--section Hero-->
+<section class="section section--hero">
+  <div class="container">
+    <div class="title-wrapp">
+      <h1 class="title title--h1">Title H1</h1>
+      <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <button class="button" data-popup="request">button</button>
+    </div>
+    <div class="formBox">
+      <form action="#" method="POST" class="form" autocomplete="off" novalidate>
+        <input type="hidden" name="subject" class="subject" value="Order Form" />
+        <!-- name -->
+        <label class="label">
+          <span class="label__text">Name</span>
+          <input type="text" class="input" name="name" placeholder="Ruslan Mirasov" required />
+        </label>
+        <!-- Phone -->
+        <label class="label">
+          <span class="label__text">Phone number</span>
+          <input type="tel" class="input" name="phone" placeholder="+38 (0--) --- -- --" required />
+        </label>
+        <!-- Email -->
+        <label class="label">
+          <span class="label__text">Email</span>
+          <input type="email" class="input" name="email" placeholder="example@gmail.com" required />
+        </label>
+
+        <!-- Select -->
+        <label class="label label--select">
+          <span class="label__text">Select your skills</span>
+          <select name="skills" class="select">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React">React</option>
+            <option value="Node">Node</option>
+          </select>
+        </label>
+
+        <!-- checkbox -->
+        <fieldset class="fieldset">
+          <legend class="fieldset__title">Select your skills</legend>
+          <label class="label label--checkbox">
+            <input type="checkbox" name="checkbox1" class="checkbox" value="Javascript" required />
+            <span class="label__text">Javascript</span>
+          </label>
+          <label class="label label--checkbox">
+            <input type="checkbox" name="checkbox1" class="checkbox" value="HTML" required />
+            <span class="label__text">HTML</span>
+          </label>
+          <label class="label label--checkbox">
+            <input type="checkbox" name="checkbox1" class="checkbox" value="CSS" />
+            <span class="label__text">CSS</span>
+          </label>
+        </fieldset>
+        <!-- radio -->
+        <fieldset class="fieldset">
+          <legend class="fieldset__title">Sex</legend>
+          <label class="label label--radio">
+            <input type="radio" name="sex" class="radio" value="Male" required />
+            <span class="label__text">Male</span>
+          </label>
+          <label class="label label--radio">
+            <input type="radio" name="sex" class="radio" value="Female" required />
+            <span class="label__text">Female</span>
+          </label>
+        </fieldset>
+        <!-- submit -->
+        <div class="label">
+          <button type="submit" class="button button--border medium button--submit" disabled>Send</button>
+        </div>
+        <!-- agree -->
+        <fieldset class="fieldset">
+          <label class="label label--checkbox full">
+            <input type="checkbox" name="agree" class="checkbox agree" value="agree" />
+            <span class="label__text">By clicking submit, you agree to our privacy policy</span>
+          </label>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>
+<!--section Hero end-->

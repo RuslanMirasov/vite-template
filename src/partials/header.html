@@ -1,13 +1,25 @@
+<!--header-->
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container">
+    <a href="#" class="logo" data-scrollto="section--hero">
+      <svg width="40" height="36"><use href="./img/icons.svg#logo"></use></svg>
+    </a>
+    <div class="menu-backdrop">
+      <button type="button" class="close-area" data-menu-open></button>
+      <div class="menu-body">
+        <nav class="menu">
+          <ul>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">Home</a></li>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">About</a></li>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">Menu</a></li>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">Service</a></li>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="button" data-popup="request">button</button>
+      </div>
+    </div>
+    <button type="button" class="burger" data-menu-open><span>burger button</span></button>
+  </div>
 </header>
+<!--header end-->

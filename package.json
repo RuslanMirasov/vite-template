@@ -1,18 +1,18 @@
 {
-  "name": "vanilla_template",
+  "name": "vite-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla_template/",
+    "build": "vite build --base=/vite-template/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.0.0",
     "glob": "^8.1.0"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Ruslan Mirasov <info@mirasov.dev>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
