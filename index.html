@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="keywords" />
+    <meta name="description" content="description" />
+    <link rel="icon" type="image/svg+xml" href="/vite-template/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Vite Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+    
+    <link rel="stylesheet" href="/vite-template/assets/index-dbea9e69.css">
+  </head>
+  <body class="body">
+    <!-- preloader -->
+<div class="preloader">
+  <div class="preloader__procent">
+    <div class="preloader__svg"></div>
+    <p data-preloader>0%</p>
+  </div>
+</div>
+
+    <!--header-->
+<header class="header">
+  <div class="container">
+    <a href="#" class="logo" data-scrollto="section--hero">
+      <svg width="40" height="36"><use href="/vite-template/assets/icons-9e8ec629.svg#logo"></use></svg>
+      <span>Product</span>
+    </a>
+    <div class="menu-backdrop">
+      <button type="button" class="close-area" data-menu-open></button>
+      <div class="menu-body">
+        <nav class="menu">
+          <ul>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">Home</a></li>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">About</a></li>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">Menu</a></li>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">Service</a></li>
+            <li class="menu__item"><a href="#" data-scrollto="section--hero">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="button" data-popup="request">button</button>
+      </div>
+    </div>
+    <button type="button" class="burger" data-menu-open><span>burger button</span></button>
+  </div>
+</header>
+<!--header end-->
+
+    <main class="main">
+      <!--section Hero-->
+<section class="section section--hero">
+  <div class="container">
+    <div class="title-wrapp">
+      <h1 class="title title--h1">Title H1</h1>
+      <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <button class="button" data-popup="request">button</button>
+    </div>
+    <div class="formBox">
+      <form action="#" method="POST" class="form" autocomplete="off" novalidate>
+        <input type="hidden" name="subject" class="subject" value="Order Form" />
+        <!-- name -->
+        <label class="label">
+          <span class="label__text">Name</span>
+          <input type="text" class="input" name="name" placeholder="Ruslan Mirasov" required />
+        </label>
+        <!-- Phone -->
+        <label class="label">
+          <span class="label__text">Phone number</span>
+          <input type="tel" class="input" name="phone" placeholder="+38 (0--) --- -- --" required />
+        </label>
+        <!-- Email -->
+        <label class="label">
+          <span class="label__text">Email</span>
+          <input type="email" class="input" name="email" placeholder="example@gmail.com" required />
+        </label>
+
+        <!-- Select -->
+        <label class="label label--select">
+          <span class="label__text">Select your skills</span>
+          <select name="skills" class="select">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React">React</option>
+            <option value="Node">Node</option>
+          </select>
+        </label>
+
+        <!-- checkbox -->
+        <fieldset class="fieldset">
+          <legend class="fieldset__title">Select your skills</legend>
+          <label class="label label--checkbox">
+            <input type="checkbox" name="checkbox1" class="checkbox" value="Javascript" required />
+            <span class="label__text">Javascript</span>
+          </label>
+          <label class="label label--checkbox">
+            <input type="checkbox" name="checkbox1" class="checkbox" value="HTML" required />
+            <span class="label__text">HTML</span>
+          </label>
+          <label class="label label--checkbox">
+            <input type="checkbox" name="checkbox1" class="checkbox" value="CSS" />
+            <span class="label__text">CSS</span>
+          </label>
+        </fieldset>
+        <!-- radio -->
+        <fieldset class="fieldset">
+          <legend class="fieldset__title">Sex</legend>
+          <label class="label label--radio">
+            <input type="radio" name="sex" class="radio" value="Male" required />
+            <span class="label__text">Male</span>
+          </label>
+          <label class="label label--radio">
+            <input type="radio" name="sex" class="radio" value="Female" required />
+            <span class="label__text">Female</span>
+          </label>
+        </fieldset>
+        <!-- submit -->
+        <div class="label">
+          <button type="submit" class="button button--border medium button--submit" disabled>Send</button>
+        </div>
+        <!-- agree -->
+        <fieldset class="fieldset">
+          <label class="label label--checkbox full">
+            <input type="checkbox" name="agree" class="checkbox agree" value="agree" />
+            <span class="label__text">By clicking submit, you agree to our privacy policy</span>
+          </label>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>
+<!--section Hero end-->
+
+    </main>
+    <!--footer-->
+<footer class="footer">
+  <div class="container">
+    <a href="#" class="logo" data-scrollto="section--hero">
+      <svg width="40" height="36"><use href="/vite-template/assets/icons-9e8ec629.svg#logo"></use></svg>
+      <span>Product</span>
+    </a>
+  </div>
+</footer>
+<!--footer end-->
+
+    <!-- backdrop -->
+<div class="backdrop is-hidden"></div>
+
+<!-- REQUEST -->
+<div class="modal is-hidden" id="request">
+  <div class="popup__body">
+    <button type="button" class="close-area" data-popup-close></button>
+    <div class="popup">
+      <button class="popup__close" data-popup-close></button>
+      <b class="popup-title">Order Form</b>
+      <p class="popup-subtitle">
+        Fill in the form and we will get <br />
+        back to you as soon as possible!
+      </p>
+      <form action="#" method="POST" class="form" autocomplete="off" novalidate>
+        <input type="hidden" name="subject" class="subject" value="Order Form" />
+        <!-- name -->
+        <label class="label">
+          <span class="label__text">Name</span>
+          <input type="text" class="input" name="name" placeholder="Ruslan Mirasov" required />
+        </label>
+        <!-- Phone -->
+        <label class="label">
+          <span class="label__text">Phone number</span>
+          <input type="tel" id="phone-input" class="input input--tel" name="phone" placeholder="+38 (0--) --- -- --" required />
+        </label>
+        <!-- Email -->
+        <label class="label">
+          <span class="label__text">Email</span>
+          <input type="email" class="input" name="email" placeholder="example@gmail.com" required />
+        </label>
+        <!-- submit -->
+        <button type="submit" class="button button--border medium button--submit">Send</button>
+        <button type="button" class="button" data-popup="ok">ok</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- LOADING -->
+<div class="modal is-hidden" id="loading">
+  <div class="popup__body">
+    <div class="popup"></div>
+  </div>
+</div>
+
+<!-- OK -->
+<div class="modal is-hidden" id="ok">
+  <div class="popup__body">
+    <button type="button" class="close-area" data-popup-close></button>
+    <div class="popup">
+      <button class="popup__close" data-popup-close></button>
+      <b class="popup-title">Form was sended!</b>
+      <p class="popup-subtitle">thank you for your massege.</p>
+    </div>
+  </div>
+</div>
+<!-- MODAL POPUP END-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/sendmail.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
