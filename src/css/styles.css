@@ -202,9 +202,19 @@
   }
 }
 
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
 .logo svg {
   display: block;
   fill: currentColor;
+}
+.logo span {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 30px;
+  line-height: 1.0714285714;
 }
 
 .menu-backdrop {
@@ -348,6 +358,7 @@
   border-radius: 2px;
   background: var(--black);
   transition: 600ms var(--cubic);
+  font-size: 0px;
 }
 .burger span {
   opacity: 1;
