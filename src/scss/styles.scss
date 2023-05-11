@@ -1,0 +1,25 @@
+:root {
+  --green: #7eb101;
+  --lime: #bbf330;
+  --black: #2c2c2c;
+  --grey: #f5f5f5;
+  --placeholder: #c4c4c4;
+  --white: #fefefe;
+  --button-color: rgb(188, 26, 26);
+  --button-color-hover: rgb(88, 11, 11);
+  --red: #ff0000;
+  --backdrop: rgba(94, 99, 99, 0.7);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@import '_mixins';
+@import '_body';
+@import '_typography';
+@import '_preloader';
+@import '_header';
+@import '_section-hero';
+@import '_buttons';
+@import '_footer';
+@import '_forms';
+@import '_popup';
+@import '_swiper';
+@import '_animations';

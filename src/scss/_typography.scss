@@ -1,0 +1,47 @@
+/*----------------------------------------------- TYPOGRAPHY */
+
+.title-wrapp {
+   display: inline-block;
+   width: 100%;
+}
+
+.title-wrapp > * {
+   margin-top: 20px;
+}
+
+.title-wrapp > *:first-child {
+   margin-top: 0px;
+}
+
+.title {
+   &.title--h1 {
+      font-weight: 500;
+      @media screen and (max-width: 767px) {
+         font-size: 30px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
+         font-size: 42px;
+      }
+      @media screen and (min-width: 1280px) {
+         font-size: 64px;
+      }
+   }
+   &.title--h2 {
+      font-weight: 600;
+      @media screen and (max-width: 767px) {
+         font-size: 20px;
+      }
+      @media screen and (min-width: 768px) {
+         font-size: 32px;
+      }
+   }
+}
+
+.subtitle {
+   @media screen and (max-width: 767px) {
+      font-size: 36px;
+   }
+   @media screen and (min-width: 768px) {
+      font-size: 20px;
+   }
+}

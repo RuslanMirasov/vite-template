@@ -1,0 +1,44 @@
+/*----------------------------------------------- BUTTONS*/
+
+.forBtn {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 24px;
+   &.ta--c {
+      justify-content: center;
+   }
+   &.ta--r {
+      justify-content: flex-end;
+   }
+}
+
+.button {
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   font-weight: 400;
+   padding: 10px 30px;
+   border-radius: 8px;
+   border: 1px solid var(--button-color);
+   background: var(--button-color);
+   color: #fff;
+   transition: 250ms var(--cubic);
+   cursor: pointer;
+   &:hover,
+   &:focus {
+      border: 1px solid var(--button-color-hover);
+      background: var(--button-color-hover);
+   }
+   &.big {
+      padding: 11px 22px;
+      font-weight: 500;
+   }
+   &:disabled {
+      opacity: 0.5;
+      cursor: auto;
+      pointer-events: none;
+   }
+}

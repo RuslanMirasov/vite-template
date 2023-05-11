@@ -1,0 +1,19 @@
+/*responsive css styles*/
+$maxWidth: 1280;
+$maxWidthContainer: 1280;
+
+@mixin css-r($property, $startSize, $minSize, $type) {
+   $addSize: $startSize - $minSize;
+
+   @if $type==1 {
+      //if smaller then container
+      #{$property}: $startSize + px;
+
+      @media only screen and (min-width: 0px) and (max-width: ($maxWidthContainer + px)) {
+         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375}));
+      }
+   } @else {
+      //olweys
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375}));
+   }
+}
