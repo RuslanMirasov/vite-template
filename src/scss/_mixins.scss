@@ -3,17 +3,41 @@ $maxWidth: 1280;
 $maxWidthContainer: 1280;
 
 @mixin css-r($property, $startSize, $minSize, $type) {
-   $addSize: $startSize - $minSize;
+  $addSize: $startSize - $minSize;
 
-   @if $type==1 {
-      //if smaller then container
-      #{$property}: $startSize + px;
+  @if $type==1 {
+    //if smaller then container
+    #{$property}: $startSize + px;
 
-      @media only screen and (min-width: 0px) and (max-width: ($maxWidthContainer + px)) {
-         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375}));
-      }
-   } @else {
-      //olweys
+    @media only screen and (min-width: 0px) and (max-width: ($maxWidthContainer + px)) {
       #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375}));
-   }
+    }
+  } @else {
+    //olweys
+    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375}));
+  }
+}
+
+@mixin flex($flex, $wrap, $justify, $align) {
+  display: #{$flex};
+  flex-wrap: #{$wrap};
+  justify-content: #{$justify};
+  align-items: #{$align};
+  position: relative;
+}
+
+@mixin flex_center() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@mixin flex_space() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
