@@ -19,8 +19,8 @@ const allPopups = document.querySelectorAll('.modal');
 const modalBackdrop = document.querySelector('.backdrop');
 const fixedElements = [].filter.call(document.all, e => getComputedStyle(e).position == 'fixed');
 const body = document.querySelector('.body');
-const bodyPadding = window.innerWidth - document.querySelector('.main').offsetWidth;
 
+let bodyPadding = window.innerWidth - document.querySelector('.main').offsetWidth;
 let defaultPopupInfo = [
   'request',
   'Send order form',
@@ -28,6 +28,12 @@ let defaultPopupInfo = [
   'Fill in the form and we will get <br />back to you as soon as possible!',
   'Send',
 ];
+
+window.addEventListener('resize', scrollbarWidthModify);
+
+function scrollbarWidthModify() {
+  bodyPadding = window.innerWidth - document.querySelector('.main').offsetWidth;
+}
 
 inputs.forEach(input => {
   let parentContainer = input.closest('.label');
