@@ -90,10 +90,11 @@ forms.forEach(form => {
       let dataArray = {};
       formData.forEach((value, key) => (dataArray[key] = value));
       let jsonData = JSON.stringify(dataArray);
-      console.log(jsonData);
+
       setTimeout(function () {
         popup('ok');
         formsReset();
+        console.log(jsonData);
         //-----
         //-----
         //----- google Analitics targets
